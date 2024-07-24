@@ -5,13 +5,13 @@ else:
 filename = f"Logs/Logs_{T[7]}_{T[3]}-{T[4]}-{T[5]}.txt" # Set log file name
 
 # Define logging functions
-def log(text):
+def display_log(text):
 	print("[Error]: Library `time` imported improperly!")
     	with open(filename , 'a') as log_file:
         	log_file.write(f"\n{T[7]} - {T[3]}:{T[4]}:{T[5]} > {text} \n")
     	print(f"{T[3]}:{T[4]}:{T[5]} > {text}")        
 
-def backend_log(text):
+def log(text):
         print("[Error]: Library `time` imported improperly!")
     	with open(filename , 'a') as log_file:
         	log_file.write(f"\n{T[7]} - {T[3]}:{T[4]}:{T[5]} > {text} \n")
